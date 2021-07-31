@@ -1,0 +1,103 @@
+*{padding: 0; margin: 0; box-sizing: border-box;}
+body{height: 900px;}
+header {
+    background: url("mars03.jpg");
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: local;
+    background-position: top center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+}
+body {
+    background-image: linear-gradient( 135deg, #9f05ff11 10%, #fd5e0811 100%);
+}
+header .overlay{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+h3, p {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.elementToFadeInAndOut {
+
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.icon {
+    width: 512px;
+    height: 512px;
+    position: relative;
+}
+
+.iconHeader {
+    font-family: 'Dancing Script', cursive;
+    font-size: 13px;
+    margin-bottom: 30px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+
+    position: absolute;
+}
+
+.iconHeaderCloningCenter  {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+
+.iconHeaderMines  {
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.iconHeaderStorage {
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
